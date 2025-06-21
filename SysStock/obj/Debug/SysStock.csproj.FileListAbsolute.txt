@@ -1,0 +1,41 @@
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\bin\Debug\SysStock.exe.config
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\bin\Debug\SysStock.exe
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\bin\Debug\SysStock.pdb
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.csproj.AssemblyReference.cache
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.AdminDashboardControl.resources
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.BrandListControl.resources
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.CategoryListControl.resources
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.LoginForm.resources
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.MainForm.resources
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.ProductListControl.resources
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.Properties.Resources.resources
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.UserListControl.resources
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.UserRegisterControl.resources
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.csproj.GenerateResource.cache
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.csproj.CoreCompileInputs.cache
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.exe
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.pdb
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.BrandCreateControl.resources
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.ProductCreateControl.resources
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.CatagoryCreateControl.resources
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\bin\Debug\SysStock.exe.config
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\bin\Debug\SysStock.exe
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\bin\Debug\SysStock.pdb
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.csproj.AssemblyReference.cache
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.exe.config
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.AdminDashboardControl.resources
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.BrandCreateControl.resources
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.BrandListControl.resources
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.CatagoryCreateControl.resources
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.CategoryListControl.resources
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.LoginForm.resources
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.MainForm.resources
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.ProductCreateControl.resources
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.ProductListControl.resources
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.Properties.Resources.resources
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.UserListControl.resources
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.UserRegisterControl.resources
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.csproj.GenerateResource.cache
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.csproj.CoreCompileInputs.cache
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.exe
+D:\Working Dir\Helping Hand\Ruhul Amin from AIUB\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.pdb
