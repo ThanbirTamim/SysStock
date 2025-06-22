@@ -10,6 +10,11 @@ namespace SysStock.Utility.DataAccess
 {
     public class UserDAL : DatabaseContext
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public bool Add(User user)
         {
             try
