@@ -34,6 +34,7 @@ namespace SysStock.Utility.DataAccess
             }
             catch (Exception)
             {
+                Console.WriteLine();
                 throw;
             }
         }
