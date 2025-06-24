@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SysStock.UI;
 using SysStock.Utility.DataAccess;
 using SysStock.Utility.Models;
 
@@ -28,9 +29,11 @@ namespace SysStock.Utility
         private Button btnCancel;
         private Label lblCurrentTime;
         private Label lblCurrentUser;
+        public MainPanel MainPanel;
 
-        public OrderForm()
+        public OrderForm(MainPanel mainPanel)
         {
+            MainPanel = mainPanel;
             _cart = ShoppingCart.Instance;
             _orderDal = new OrderDAL();
             SetupForm();
@@ -385,6 +388,9 @@ namespace SysStock.Utility
                 MessageBox.Show($"Order #{orderId} processed successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 _cart.Clear();
+
+                MainPanel.RefreshAllTabs();
+
                 this.Close();
             }
             catch (Exception ex)

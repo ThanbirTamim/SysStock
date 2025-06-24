@@ -177,5 +177,41 @@ namespace SysStock.Utility.DataAccess
                 throw;
             }
         }
+
+        public bool ChangePassword(int userId, string currentPassword, string newPassword)
+        {
+            try
+            {
+                // First, check if the current password matches
+                using (var checkCmd = new SqlCommand(
+                    "SELECT COUNT(1) FROM Users WHERE UserId = @UserId AND Password = @CurrentPassword AND IsActive = 1",
+                    GetConnection()))
+                {
+                    checkCmd.Parameters.AddWithValue("@UserId", userId);
+                    checkCmd.Parameters.AddWithValue("@CurrentPassword", currentPassword);
+
+                    int count = Convert.ToInt32(checkCmd.ExecuteScalar());
+                    if (count == 0)
+                    {
+                        // Current password does not match
+                        return false;
+                    }
+                }
+
+                // If matched, update to new password
+                using (var updateCmd = new SqlCommand(
+                    "UPDATE Users SET Password = @NewPassword WHERE UserId = @UserId", GetConnection()))
+                {
+                    updateCmd.Parameters.AddWithValue("@UserId", userId);
+                    updateCmd.Parameters.AddWithValue("@NewPassword", newPassword);
+
+                    return updateCmd.ExecuteNonQuery() > 0;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

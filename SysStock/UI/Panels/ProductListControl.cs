@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Windows.Forms;
+using SysStock.UI;
 using SysStock.Utility;
 using SysStock.Utility.DataAccess;
 using SysStock.Utility.Models;
 
-namespace SysStock
+namespace SysStock.UI.Panels
 {
     public partial class ProductListControl : UserControl
     {
         private DataGridView dgvProducts;
         private ProductDAL productDal;
         private readonly string userRole;
-        private MainForm mainForm;
-        public ProductListControl(MainForm mainForm, string role)
+        private MainPanel mainForm;
+        public ProductListControl(MainPanel mainForm, string role)
         {
             InitializeComponent();
             this.mainForm = mainForm;
@@ -22,14 +23,14 @@ namespace SysStock
             LoadProducts();
         }
 
+        public void RefreshData()
+        {
+            LoadProducts(); // Or whatever method loads/reloads the grid
+        }
+
         private void ProductListControl_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnAddProduct_Click(object sender, EventArgs e)
-        {
-            mainForm.LoadControl(new ProductCreateControl());
         }
 
         private void SetupDataGridView()
@@ -244,7 +245,7 @@ namespace SysStock
 
         private void btnCartView_Click(object sender, EventArgs e)
         {
-            using (var orderForm = new OrderForm())
+            using (var orderForm = new OrderForm(mainForm))
             {
                 orderForm.ShowDialog();
             }

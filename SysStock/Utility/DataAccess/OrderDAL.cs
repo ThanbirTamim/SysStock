@@ -371,5 +371,79 @@ namespace SysStock.Utility.DataAccess
                 }
             }
         }
+
+        public List<Order> GetAll()
+        {
+            try
+            {
+                var orders = new List<Order>();
+                using (var cmd = new SqlCommand(@"
+                        SELECT o.*, u.Username
+                        FROM Orders o
+                        LEFT JOIN Users u ON o.UserId = u.UserId
+                        ORDER BY o.OrderDate DESC", GetConnection()))
+                {
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var order = new Order
+                            {
+                                OrderId = Convert.ToInt32(reader["OrderId"]),
+                                UserId = reader["UserId"] != DBNull.Value ? Convert.ToInt32(reader["UserId"]) : -1,
+                                OrderDate = Convert.ToDateTime(reader["OrderDate"]),
+                                SubTotal = Convert.ToDecimal(reader["SubTotal"]),
+                                GrossDiscount = Convert.ToDecimal(reader["GrossDiscount"]),
+                                VATPercentage = Convert.ToDecimal(reader["VATPercentage"]),
+                                VATAmount = Convert.ToDecimal(reader["VATAmount"]),
+                                TotalAmount = Convert.ToDecimal(reader["TotalAmount"]),
+                                AmountPaid = Convert.ToDecimal(reader["AmountPaid"]),
+                                ChangeGiven = Convert.ToDecimal(reader["ChangeGiven"]),
+                                PaymentMethod = reader["PaymentMethod"]?.ToString(),
+                                Remarks = reader["Remarks"]?.ToString()
+                            };
+                            orders.Add(order);
+                        }
+                    }
+                }
+
+                // Get order items for each order
+                foreach (var order in orders)
+                {
+                    using (var cmd = new SqlCommand(@"
+                        SELECT oi.*, p.Name as ProductName
+                        FROM OrderItems oi
+                        INNER JOIN Products p ON oi.ProductId = p.ProductId
+                        WHERE oi.OrderId = @OrderId", GetConnection()))
+                    {
+                        cmd.Parameters.AddWithValue("@OrderId", order.OrderId);
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                order.OrderItems.Add(new OrderItem
+                                {
+                                    OrderItemId = Convert.ToInt32(reader["OrderItemId"]),
+                                    OrderId = Convert.ToInt32(reader["OrderId"]),
+                                    ProductId = Convert.ToInt32(reader["ProductId"]),
+                                    ProductName = reader["ProductName"].ToString(),
+                                    Quantity = Convert.ToInt32(reader["Quantity"]),
+                                    UnitPrice = Convert.ToDecimal(reader["UnitPrice"]),
+                                    DiscountPercent = Convert.ToDecimal(reader["DiscountPercent"]),
+                                    DiscountAmount = Convert.ToDecimal(reader["DiscountAmount"]),
+                                    LineTotal = Convert.ToDecimal(reader["LineTotal"])
+                                });
+                            }
+                        }
+                    }
+                }
+
+                return orders;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }
