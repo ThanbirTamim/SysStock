@@ -65,7 +65,7 @@ namespace SysStock.UI
         private void StartTimer()
         {
             timer = new Timer();
-            timer.Interval = 1000; // Update every sec
+            timer.Interval = 1000;
             timer.Tick += (s, e) => UpdateDateTime();
             timer.Start();
         }
